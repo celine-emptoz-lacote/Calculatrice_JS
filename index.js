@@ -15,26 +15,32 @@ document.addEventListener('DOMContentLoaded', () => {
                 reset = false
             }
 
-            if (btns[i].getAttribute('id') == "moins"){
-                operation = operation + "-"
+            switch(btns[i].getAttribute('id')) {
+                case "moins": 
+                    operation += "-"
+                    break
+                case "plus":  
+                    operation += "+"
+                    break
+                case "diviser": 
+                    operation += "/"
+                    break
+                case "multiplier": 
+                    operation += "*"
+                    break
+                case "egal":
+                    operation = eval(operation)
+                    reset = true
+                    break
+                case "supp":
+                    operation = "0"
+                    reset = true
+                    break
+                default:
+                    operation += btns[i].getAttribute('id')
+
             }
-            else if (btns[i].getAttribute('id') == "plus") {
-                operation = operation + "+"
-            }
-            else if (btns[i].getAttribute('id') == "diviser") {
-                operation = operation + "/"
-            }
-            else if (btns[i].getAttribute('id') == "multiplier") {
-                operation = operation + "*"
-            }
-            else if (btns[i].getAttribute('id') == "egal") {
-                operation = eval(operation)
-                reset = true
-            }
-            else {
-                operation = operation + btns[i].getAttribute('id')
-            }
-            
+    
             resultat[0].innerHTML = operation
         })
     }
