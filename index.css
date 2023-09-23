@@ -1,0 +1,39 @@
+body {
+    width: 35%;
+    margin: auto;
+    padding: 1%;
+    border: 1px solid black;
+}
+
+.view {
+    background-color: bisque;
+    height: 6vh;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 30px;
+    padding-right: 2%;
+}
+
+button {
+    width: calc(95% / 4);
+    height: 6vh;
+    margin-bottom: 2%;
+    font-size: 30px;
+}
+
+div button:last-child {
+    margin-left: 3.5%;
+}
+
+#plus, #moins, #diviser, #multiplier {
+    background-color: rgb(228, 156, 62);
+}
+
+#plus:hover, #moins:hover, #diviser:hover, #multiplier:hover {
+    background-color: rgb(247, 158, 70);
+}
+
+#egal {
+    background-color: bisque;
+}
