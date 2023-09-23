@@ -37,3 +37,13 @@ div button:last-child {
 #egal {
     background-color: bisque;
 }
+
+#supp {
+    background-color: red;
+    color: white;
+    margin-left: 76%;
+}
+
+#supp:hover {
+    background-color: rgb(108, 16, 16);
+}
