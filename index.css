@@ -69,3 +69,35 @@ div button:last-child {
     background: chocolate;
     display: none;
 }
+
+.historiqueDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+#fermer {
+    width: 4%;
+    height: 3vh;
+    margin: 2%;
+    font-size: 20px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+#historique {
+    padding: 3%;
+    font-size: 30px;
+}
+
+#historique p {
+    margin: 0;
+    padding: 0;
+}
+
+#effacer {
+    width: 20%;
+    height: 4vh;
+    font-size: 20px;
+    background-color: blanchedalmond;
+}

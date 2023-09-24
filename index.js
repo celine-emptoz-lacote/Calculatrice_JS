@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let btns = document.querySelectorAll('button')
     var resultat = document.getElementsByClassName('view')
+    let historique = document.getElementById('historique')
     let operation = ""
     let reset = false
 
@@ -9,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         btns[i].addEventListener('click', () => {  
 
-            if (btns[i].getAttribute('id') !== 'fermer' && btns[i].getAttribute('id') !== "pop"  ){
+            if (btns[i].getAttribute('id') !== 'fermer' && btns[i].getAttribute('id') !== "pop"  && btns[i].getAttribute('id') !== "effacer" ){
                 if (reset == true){
                     operation = ""
                     resultat[0].innerHTML = operation
@@ -30,6 +31,11 @@ document.addEventListener('DOMContentLoaded', () => {
                         operation += "*"
                         break
                     case "egal":
+                        // Creation d'un p pour acceuillir le resultat
+                        let paragraphe = document.createElement('p')
+                        paragraphe.textContent = operation + " = " + eval(operation)
+                        historique.append(paragraphe)
+
                         operation = eval(operation)
                         reset = true
                         break
@@ -58,6 +64,10 @@ document.addEventListener('DOMContentLoaded', () => {
             // Fermeture de la pop up
             if (btns[i].getAttribute('id') == "fermer"){
                 popup[0].style.display = 'none'
+            }
+
+            if (btns[i].getAttribute('id') == "effacer" ) {
+                historique.innerHTML = ""
             }
 
 
