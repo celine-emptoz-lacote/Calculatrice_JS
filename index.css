@@ -1,3 +1,4 @@
+
 body {
     width: 35%;
     margin: auto;
@@ -5,10 +6,12 @@ body {
     border: 1px solid black;
     z-index: 1;
 }
+
 main {
     position: relative;
     width: 100%;
 }
+
 .view, .view2 {
     background-color: bisque;
     height: 6vh;
@@ -74,8 +77,9 @@ div button:last-child {
     height: 100%;
     top: 0;
     left: 0;
-    background: chocolate;
+    background: #0b0b0bc7;
     display: none;
+    color: white;
 }
 
 .historiqueDiv {
@@ -122,4 +126,62 @@ div button:last-child {
 
 #selection{
     display: none;
+}
+
+@media screen and (min-width: 400px) and (max-width: 1500px) {
+    body {
+        width: 100%;
+    }
+
+    #convertion {
+        font-size: 15px;
+    }
+
+    button {
+        width: 22%;
+        height: 6vh;
+        font-size: 15px;
+    }
+}
+@media screen and (min-width: 400px) and (max-width: 780px) {
+   
+    #convertion {
+        width: 40%;
+        height: 5vh;
+    }
+
+}
+@media screen and (min-width: 780px) and (max-width: 1500px) {
+   
+    #convertion {
+        width: 22%;
+        height: 5vh;
+    }
+
+    #fermer {
+        font-size: 10px;
+    }
+
+    #effacer {
+        width: 30%;
+        height: 4vh;
+        font-size: 15px;
+        background-color: blanchedalmond;
+    }
+}
+
+@media screen and (min-width: 1501px) and (max-width: 2200px) {
+
+    button {
+        width: 23%;
+        height: 6vh;
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (min-width: 1501px) and (max-width: 2270px) {
+    body {
+        width: 50%;
+    }
 }
