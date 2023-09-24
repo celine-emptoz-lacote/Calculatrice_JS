@@ -9,7 +9,7 @@ main {
     position: relative;
     width: 100%;
 }
-.view {
+.view, .view2 {
     background-color: bisque;
     height: 6vh;
     display: flex;
@@ -18,7 +18,15 @@ main {
     font-size: 30px;
     padding-right: 2%;
 }
+.convertion {
+    display: flex;
+    justify-content: space-between;
+}
 
+#selection {
+    width: 30%;
+    margin-bottom: 2%;
+}
 button {
     width: calc(95% / 4);
     height: 6vh;
@@ -100,4 +108,18 @@ div button:last-child {
     height: 4vh;
     font-size: 20px;
     background-color: blanchedalmond;
+}
+
+#convertion {
+    height: 3vh;
+    font-size: 20px;
+    background-color: rgb(228, 156, 62);
+}
+
+.view2 {
+    display: none;
+}
+
+#selection{
+    display: none;
 }

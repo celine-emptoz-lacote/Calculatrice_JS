@@ -1,7 +1,3 @@
-<!-- Sélection de thèmes : Offrez à l'utilisateur la possibilité de choisir parmi 
-    plusieurs thèmes pour personnaliser l'apparence de la calculatrice.-->
-<!-- Conversion d'unités : Ajoutez une fonction de conversion d'unités pour convertir entre différentes unités de mesure, 
-    telles que les devises, les longueurs, les poids, les volumes, etc. -->
 <!--  Responsive -->
 
 <!DOCTYPE html>
@@ -16,8 +12,16 @@
 <body>
     <header>
         <p class="view">0</p>
+        <p class=" view view2">0</p>
     </header>
     <main>
+        <div class="convertion">
+            <button id ='convertion'>Conversion</button>
+            <select name="" id="selection">
+                <option value="dollar">Euros ==> Dollars</option>
+                <option value="mlg">kg ==> g</option>
+            </select>
+        </div>
         <div>
             <button id="1">1</button>
             <button id="2">2</button>
